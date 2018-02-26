@@ -1,0 +1,6 @@
+version: 0.0
+os: linux
+hooks:
+  BeforeInstall:
+    - location: scripts/setup_AMI.sh
+      timeout: 900
