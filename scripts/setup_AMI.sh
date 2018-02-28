@@ -25,7 +25,7 @@ git clone https://github.com/ccpgames/ejabberd.git \
        --branch $EJABBERD_BRANCH --single-branch --depth=1
 
 echo "-------------------------Setup ejabberd build-------------------------"
-cd ejabberd
+cd /home/ubuntu/ejabberd/
 chmod +x autogen.sh
 ./autogen.sh
 ./configure --enable-user=ejabberd
