@@ -68,11 +68,7 @@ host_config:
     allow_multiple_connections: false
     anonymous_protocol: both
   \"$ipv4\":
-    auth_method:
-      - internal
-      - anonymous
-    allow_multiple_connections: false
-    anonymous_protocol: both	
+    auth_method: internal	
 
 shaper:
   ##
