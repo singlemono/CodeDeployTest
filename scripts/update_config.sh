@@ -25,7 +25,7 @@ listen:
     ## certificate, specify the full path to the
     ## file and uncomment these lines:
     ##
-    starttls: true
+    starttls: false
     certfile: \"/var/lib/ejabberd/wildcard_chat.eveonline.com_chain.pem\"
     ## protocol_options: 'TLSOPTS'
     ## dhfile: 'DHFILE'
