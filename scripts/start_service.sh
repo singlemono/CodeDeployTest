@@ -9,13 +9,13 @@ cd /home/ubuntu/ejabberd/
 if ps -C inet_gethost &> /dev/null
 then
 	sudo ejabberdctl stop
-	sleep 15
+	sleep 10
 fi
 
 echo "Start Service"
 
 sudo ejabberdctl start
-sleep 15
+sleep 10
 
 echo "Service Started"
 
@@ -24,6 +24,7 @@ echo "Service Started"
 if ! ejabberdctl check-account testuser1 $ipv4
 then
 	ejabberdctl register testuser1 $ipv4 pass123
+	sleep 5
 fi
 
 if ! ejabberdctl check-account testuser2 $ipv4
