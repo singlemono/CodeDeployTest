@@ -9,11 +9,15 @@ cd /home/ubuntu/ejabberd/
 if ps -C inet_gethost &> /dev/null
 then
 	sudo ejabberdctl stop
+	sleep 15
 fi
 
-sudo ejabberdctl start
+echo "Start Service"
 
-echo "Service started"
+sudo ejabberdctl start
+sleep 15
+
+echo "Service Started"
 
 #------------------------------------------
 
