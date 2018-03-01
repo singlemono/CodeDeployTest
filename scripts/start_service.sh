@@ -17,7 +17,14 @@ echo "Service started"
 
 #------------------------------------------
 
-ejabberdctl register testuser1 $ipv4 pass123
-ejabberdctl register testuser2 $ipv4 pass123
+if ejabberdctl check-account testuser1 $ipv4 || false
+then
+	ejabberdctl register testuser1 $ipv4 pass123
+fi
+
+if ejabberdctl check-account testuser2 $ipv4 || false
+then
+	ejabberdctl register testuser2 $ipv4 pass123
+fi
 
 
