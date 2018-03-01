@@ -6,7 +6,7 @@ ipv4=$(curl ${URL})
 
 cd /home/ubuntu/ejabberd/
 
-if [ ps -C inet_gethost &> /dev/null ]
+if ps -C inet_gethost &> /dev/null
 then
 	sudo ejabberdctl stop
 fi
@@ -17,12 +17,12 @@ echo "Service started"
 
 #------------------------------------------
 
-if [ ! ejabberdctl check-account testuser1 $ipv4 ]
+if ! ejabberdctl check-account testuser1 $ipv4
 then
 	ejabberdctl register testuser1 $ipv4 pass123
 fi
 
-if [ ! ejabberdctl check-account testuser2 $ipv4 ]
+if ! ejabberdctl check-account testuser2 $ipv4
 then
 	ejabberdctl register testuser2 $ipv4 pass123
 fi
