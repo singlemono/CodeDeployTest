@@ -247,12 +247,12 @@ modules:
 host_config:
   \"shiyang-ws.chat.eveonline.com\":
     ssoauth_allow_any: true
-    bannedwords_regex_endpoint: \"http://13.230.58.249:8000/banned_words/regexes/\"
-    bannedwords_replace_endpoint: \"http://13.230.58.249:8000/banned_words/replaceword/\"
+    bannedwords_regex_endpoint: \"http://172.31.22.161:8000/banned_words/regexes/\"
+    bannedwords_replace_endpoint: \"http://172.31.22.161:8000/banned_words/replaceword/\"
   \"$ipv4\":
     ssoauth_allow_any: true
-    bannedwords_regex_endpoint: \"http://13.230.58.249:8000/banned_words/regexes/\"
-    bannedwords_replace_endpoint: \"http://13.230.58.249:8000/banned_words/replaceword/\"" > ejabberd.yml
+    bannedwords_regex_endpoint: \"http://172.31.22.161:8000/banned_words/regexes/\"
+    bannedwords_replace_endpoint: \"http://172.31.22.161:8000/banned_words/replaceword/\"" > ejabberd.yml
 
 echo "File Created!"
 
