@@ -6,6 +6,7 @@ ipv4=$(curl ${URL})
 
 cd /home/ubuntu/ejabberd/
 
+sudo ejabberdctl stop
 sudo ejabberdctl start
 
 echo "Service started"
