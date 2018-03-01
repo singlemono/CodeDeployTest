@@ -6,6 +6,11 @@ ipv4=$(curl ${URL})
 
 cd /home/ubuntu/ejabberd/
 
+if ps -C inet_gethost &> /dev/null
+then
+	sudo ejabberdctl stop
+fi
+
 sudo ejabberdctl start
 
 echo "Service started"
